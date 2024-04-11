@@ -21,6 +21,12 @@
 		E2C5142E2BC7F8B20021C172 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5142D2BC7F8B20021C172 /* BaseView.swift */; };
 		E2C514302BC7F8BF0021C172 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5142F2BC7F8BF0021C172 /* BaseViewController.swift */; };
 		E2C514322BC7F8EA0021C172 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C514312BC7F8EA0021C172 /* BaseTableViewCell.swift */; };
+		E2C514362BC7FA1C0021C172 /* iTunesSearchAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C514352BC7FA1C0021C172 /* iTunesSearchAPIManager.swift */; };
+		E2C514382BC7FA260021C172 /* ChatAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C514372BC7FA260021C172 /* ChatAPIManager.swift */; };
+		E2C5143A2BC7FA3A0021C172 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C514392BC7FA3A0021C172 /* APIKey.swift */; };
+		E2C5143D2BC7FACF0021C172 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E2C5143C2BC7FACF0021C172 /* Alamofire */; };
+		E2C514402BC7FB4B0021C172 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5143F2BC7FB4B0021C172 /* Music.swift */; };
+		E2C514422BC7FDBF0021C172 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C514412BC7FDBF0021C172 /* Chat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,11 @@
 		E2C5142D2BC7F8B20021C172 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		E2C5142F2BC7F8BF0021C172 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E2C514312BC7F8EA0021C172 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		E2C514352BC7FA1C0021C172 /* iTunesSearchAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesSearchAPIManager.swift; sourceTree = "<group>"; };
+		E2C514372BC7FA260021C172 /* ChatAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatAPIManager.swift; sourceTree = "<group>"; };
+		E2C514392BC7FA3A0021C172 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		E2C5143F2BC7FB4B0021C172 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		E2C514412BC7FDBF0021C172 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C5143D2BC7FACF0021C172 /* Alamofire in Frameworks */,
 				E2C514292BC7F8870021C172 /* RxCocoa in Frameworks */,
 				E2C514232BC7F8640021C172 /* SnapKit in Frameworks */,
 				E2C5142B2BC7F8870021C172 /* RxSwift in Frameworks */,
@@ -73,9 +85,11 @@
 		E2C514082BC7F72B0021C172 /* DailyMue */ = {
 			isa = PBXGroup;
 			children = (
+				E2C5143E2BC7FB410021C172 /* Model */,
 				E2C5141D2BC7F73C0021C172 /* App */,
 				E2C5142C2BC7F88C0021C172 /* Base */,
 				E2C5141E2BC7F7610021C172 /* Views */,
+				E2C514342BC7FA070021C172 /* Network */,
 				E2C514122BC7F72C0021C172 /* Assets.xcassets */,
 				E2C514172BC7F72C0021C172 /* Info.plist */,
 			);
@@ -111,6 +125,25 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		E2C514342BC7FA070021C172 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E2C514372BC7FA260021C172 /* ChatAPIManager.swift */,
+				E2C514352BC7FA1C0021C172 /* iTunesSearchAPIManager.swift */,
+				E2C514392BC7FA3A0021C172 /* APIKey.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E2C5143E2BC7FB410021C172 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2C5143F2BC7FB4B0021C172 /* Music.swift */,
+				E2C514412BC7FDBF0021C172 /* Chat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +165,7 @@
 				E2C514252BC7F87C0021C172 /* Lottie */,
 				E2C514282BC7F8870021C172 /* RxCocoa */,
 				E2C5142A2BC7F8870021C172 /* RxSwift */,
+				E2C5143C2BC7FACF0021C172 /* Alamofire */,
 			);
 			productName = DailyMue;
 			productReference = E2C514062BC7F72B0021C172 /* DailyMue.app */;
@@ -165,6 +199,7 @@
 				E2C514212BC7F8640021C172 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				E2C514242BC7F87C0021C172 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				E2C514272BC7F8870021C172 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				E2C5143B2BC7FACF0021C172 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = E2C514072BC7F72B0021C172 /* Products */;
 			projectDirPath = "";
@@ -195,10 +230,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2C514302BC7F8BF0021C172 /* BaseViewController.swift in Sources */,
+				E2C514362BC7FA1C0021C172 /* iTunesSearchAPIManager.swift in Sources */,
+				E2C514382BC7FA260021C172 /* ChatAPIManager.swift in Sources */,
 				E2C5140E2BC7F72B0021C172 /* ViewController.swift in Sources */,
 				E2C5140A2BC7F72B0021C172 /* AppDelegate.swift in Sources */,
 				E2C5140C2BC7F72B0021C172 /* SceneDelegate.swift in Sources */,
+				E2C514422BC7FDBF0021C172 /* Chat.swift in Sources */,
 				E2C514322BC7F8EA0021C172 /* BaseTableViewCell.swift in Sources */,
+				E2C514402BC7FB4B0021C172 /* Music.swift in Sources */,
+				E2C5143A2BC7FA3A0021C172 /* APIKey.swift in Sources */,
 				E2C5142E2BC7F8B20021C172 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +498,14 @@
 				minimumVersion = 6.6.0;
 			};
 		};
+		E2C5143B2BC7FACF0021C172 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -480,6 +528,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E2C514272BC7F8870021C172 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		E2C5143C2BC7FACF0021C172 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2C5143B2BC7FACF0021C172 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
