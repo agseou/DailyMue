@@ -14,6 +14,13 @@
 		E2C514132BC7F72C0021C172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C514122BC7F72C0021C172 /* Assets.xcassets */; };
 		E2C514162BC7F72C0021C172 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E2C514152BC7F72C0021C172 /* Base */; };
 		E2C514202BC7F7800021C172 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E2C5141F2BC7F77F0021C172 /* .gitignore */; };
+		E2C514232BC7F8640021C172 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E2C514222BC7F8640021C172 /* SnapKit */; };
+		E2C514262BC7F87C0021C172 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E2C514252BC7F87C0021C172 /* Lottie */; };
+		E2C514292BC7F8870021C172 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E2C514282BC7F8870021C172 /* RxCocoa */; };
+		E2C5142B2BC7F8870021C172 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E2C5142A2BC7F8870021C172 /* RxSwift */; };
+		E2C5142E2BC7F8B20021C172 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5142D2BC7F8B20021C172 /* BaseView.swift */; };
+		E2C514302BC7F8BF0021C172 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5142F2BC7F8BF0021C172 /* BaseViewController.swift */; };
+		E2C514322BC7F8EA0021C172 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C514312BC7F8EA0021C172 /* BaseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,9 @@
 		E2C514152BC7F72C0021C172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2C514172BC7F72C0021C172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C5141F2BC7F77F0021C172 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E2C5142D2BC7F8B20021C172 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		E2C5142F2BC7F8BF0021C172 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E2C514312BC7F8EA0021C172 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C514292BC7F8870021C172 /* RxCocoa in Frameworks */,
+				E2C514232BC7F8640021C172 /* SnapKit in Frameworks */,
+				E2C5142B2BC7F8870021C172 /* RxSwift in Frameworks */,
+				E2C514262BC7F87C0021C172 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				E2C5141D2BC7F73C0021C172 /* App */,
+				E2C5142C2BC7F88C0021C172 /* Base */,
 				E2C5141E2BC7F7610021C172 /* Views */,
 				E2C514122BC7F72C0021C172 /* Assets.xcassets */,
 				E2C514172BC7F72C0021C172 /* Info.plist */,
@@ -86,6 +101,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E2C5142C2BC7F88C0021C172 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E2C5142D2BC7F8B20021C172 /* BaseView.swift */,
+				E2C5142F2BC7F8BF0021C172 /* BaseViewController.swift */,
+				E2C514312BC7F8EA0021C172 /* BaseTableViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +127,12 @@
 			dependencies = (
 			);
 			name = DailyMue;
+			packageProductDependencies = (
+				E2C514222BC7F8640021C172 /* SnapKit */,
+				E2C514252BC7F87C0021C172 /* Lottie */,
+				E2C514282BC7F8870021C172 /* RxCocoa */,
+				E2C5142A2BC7F8870021C172 /* RxSwift */,
+			);
 			productName = DailyMue;
 			productReference = E2C514062BC7F72B0021C172 /* DailyMue.app */;
 			productType = "com.apple.product-type.application";
@@ -130,6 +161,11 @@
 				Base,
 			);
 			mainGroup = E2C513FD2BC7F72B0021C172;
+			packageReferences = (
+				E2C514212BC7F8640021C172 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				E2C514242BC7F87C0021C172 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				E2C514272BC7F8870021C172 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = E2C514072BC7F72B0021C172 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,9 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C514302BC7F8BF0021C172 /* BaseViewController.swift in Sources */,
 				E2C5140E2BC7F72B0021C172 /* ViewController.swift in Sources */,
 				E2C5140A2BC7F72B0021C172 /* AppDelegate.swift in Sources */,
 				E2C5140C2BC7F72B0021C172 /* SceneDelegate.swift in Sources */,
+				E2C514322BC7F8EA0021C172 /* BaseTableViewCell.swift in Sources */,
+				E2C5142E2BC7F8B20021C172 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +432,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E2C514212BC7F8640021C172 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		E2C514242BC7F87C0021C172 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.2;
+			};
+		};
+		E2C514272BC7F8870021C172 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E2C514222BC7F8640021C172 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2C514212BC7F8640021C172 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		E2C514252BC7F87C0021C172 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2C514242BC7F87C0021C172 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		E2C514282BC7F8870021C172 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2C514272BC7F8870021C172 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E2C5142A2BC7F8870021C172 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2C514272BC7F8870021C172 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E2C513FE2BC7F72B0021C172 /* Project object */;
 }
